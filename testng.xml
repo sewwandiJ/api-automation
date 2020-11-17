@@ -3,8 +3,8 @@
 <suite name="BE Automation Project">
     <test name="Regression" parallel="methods">
         <classes>
-            <class name="PostsTest"/>
-            <class name="UsersTest"/>
+            <class name="com.jsonplaceholder.PostsTest"/>
+            <class name="com.jsonplaceholder.UsersTest"/>
         </classes>
     </test>
 </suite>
