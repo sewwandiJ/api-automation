@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'org.testng', name: 'testng', version: '7.3.0'
+    compile 'io.rest-assured:rest-assured:4.3.2'
+    compile 'io.rest-assured:json-path:4.3.2'
+    compile 'io.rest-assured:xml-path:4.3.2'
+    compile 'io.rest-assured:json-schema-validator:4.3.2'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.12.0-rc2'
+}
