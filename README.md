@@ -25,10 +25,10 @@ Bellow steps are for IntellijIdea based test execution.
   - Right click on testng.xml and create a run configuration for tesng.xml. Select **In whole project** in the dialog box opened.
   - Select above run configuration and run the tests.
   
-#Test Scenarios
+# Test Scenarios
 Format : Scenario title (Expected outcome)
 
-## Create post/user
+### Create post/user
 1. Create post/user with mandatory parameters (Status code : 201, Entity is created)
 2. Create post/user with all parameters (Status code : 201, Entity is created) - **AUTOMATED**
 3. Create post/user with max length values for parameters (Status code : 201, Entity is created)
@@ -45,18 +45,18 @@ Format : Scenario title (Expected outcome)
 13. Create user with invalid format email (Status code : 400, Proper error message)
 14. Create user with invalid format website (Status code : 400, Proper error message)
 
-## Get post/user
+### Get post/user
 1. Get post/user with valid id (Status code : 200, Return entity details) - **AUTOMATED**
 
 2. Get post/user with non existing id  (Status code : 404, Proper error message)
 
-## List post/user
+### List post/user
 1. List posts/users without any filtering (Status code : 200, Return all entities) - **AUTOMATED**
 2. List posts/users with valid filtering (Status code : 200, Return filtered entities by given criteria) - **AUTOMATED**
 3. List posts/users with invalid filtering - Eg: List posts filtered by a non existing user id (Status code : 200, Return empty list) - **AUTOMATED**
 4. Pagination tests if pagination is in place
 
-## Update post/user (PUT)
+### Update post/user (PUT)
 1. Update post/user with all parameters (Status code : 200, All parameters updated) - **AUTOMATED**
 2. Update post/user set of/individual parameters (Status code : 200, Parameter/s sent in request updated, Other parameters removed) - **AUTOMATED**
 3. Update post/user and set max length for parameters  (Status code : 200, Parameters updated)
@@ -70,7 +70,7 @@ Format : Scenario title (Expected outcome)
 10. Update user and set invalid format email (Status code : 400, Proper error message)
 11. Update user and set invalid format website (Status code : 400, Proper error message)
 
-## Update post/user (PATCH)
+### Update post/user (PATCH)
 1. Update post/user with all parameters (Status code : 200, All parameters updated) - **AUTOMATED**
 2. Update post/user with set of/individual parameters (Status code : 200, Parameter/s sent in request updated, Other parameters unchanged) - **AUTOMATED**
 3. Update post/user and set max length for parameters  (Status code : 200, Parameters updated)
@@ -84,12 +84,12 @@ Format : Scenario title (Expected outcome)
 10. Update user and set invalid format email (Status code : 400, Proper error message)
 11. Update user and set invalid format website (Status code : 400, Proper error message)
 
-## Delete post/user
+### Delete post/user
 1. Delete post/user with valid id (Status code : 204, Entity is deleted) - **AUTOMATED**
 
 2. Delete post/user with non existing id  (Status code : 404, Proper error message)
 
-## Other functional scenarios for nested APIs
+### Other functional scenarios for nested APIs
 **Endpoint /posts/1/comments**
 1. Get comments for a post by valid post id (Status code : 200, Comments for given post returned) - **AUTOMATED**
 
